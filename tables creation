@@ -1,0 +1,35 @@
+EMPLOYEES:-
+SQL> create table Employees(
+ 2 employee_id number(6),
+ 3 first_name varchar2(25),
+ 4 last_name varchar2(25),
+ 5 hire_data date,
+ 6 dept_no number(6),
+ 7 leaves_no number,
+ 8 constraint employee_pk primary key(employee_id));
+DEPARTMENT:-
+SQL> create table department(
+ 2 dept_no number(6),
+ 3 dept_name varchar2(25),
+ 4 constraint department_pk primary key(dept_no));
+SALARY:-
+SQL> create table salary(
+ 2 employee_id number(6),
+ 3 salary number,
+ 4 tax number,
+ 5 bonus number,
+ 6 foreign key(employee_id) references Employees(employee_id));
+LEAVES:-
+SQL> create table Leave(
+ 2 dept_no number(6),
+ 3 sick_leaves number,
+ 4 casual_leaves number,
+ 5 paid_leaves number,
+ 6 foreign key(dept_no)references department(dept_no));
+ACCDETAILS:-
+SQL> create table accdetails(
+ 2 employee_id number(6),
+ 3 acc_number number,
+ 4 bank_name varchar2(35),
+ 5 constraint accdetails_pk primary key(acc_number),
+ 6 foreign key(employee_id) references Employees(Employee_id))
