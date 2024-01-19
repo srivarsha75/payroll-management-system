@@ -1,0 +1,125 @@
+EMPLOYEES:
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(1204 , 
+“Ryle”, “Kincaid”, “17-oct-2001”,1,5);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(2305, 
+"Atlas", "Corrigan", "27-aug-2003",3,6);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(3406 , 
+"Alex", "Volkov", "7-march-2001",3,3);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(1014 , 
+"Rhys", "Larsen", "17-may-2004",2,1);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(2034 , 
+"Josh", "Chen", "29-march-2005",5,7);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(7204 , 
+"Christian", "Harper", "01-may-2004",4,2);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(4201 , 
+"Kirill", "Morozov", "03-july-2005",2,4);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(5304 , 
+"Aiden", "King", "27-dec-2004",5,5);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(4100 , 
+"Xander", "Knight","15-jan-2006",1,7);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(1004 , 
+"Ronan", "Astor", "1-march-2003",4,2);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(6789, 
+"Cole", "Nash", "29-may-2005",4,6);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(9807 , 
+"Zade", "Meadows", "31-july-2002",5,4);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(8024 , 
+"Lily", "Bloom", "21-sep-2007",1,2);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(6657, 
+"Ava", "Chen", "12-feb-2000",3,1);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(2220, 
+"Bridget", "Aschberg","02-apr-2002",4,4);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(5047 , 
+"Jules", "Ambrose","09-sep-2006",2,3);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(4066 , 
+"Victoria", "Evans", "30-june-2001",1,1);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(5678 , 
+"Stella", "Alonso","04-nov-2000",5,4);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(2004 , 
+"Sasha", "Ivanova","06-aug-2007",3,2);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(1897 , 
+"Elsa", "Steel","08-oct-2002",2,2);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(7866 
+,"Teal", "Von Doren","10-dec-2005",4,2);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(8976 , 
+"Kimberly", "Reed","19-june-2002",5,7);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(1001 , 
+"Silver", "Queens","07-oct-2007",3,3);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(2005 , 
+"Adeline", "Reily","06-july-2009",2,4);
+Insert into Employees(employee_id,first_name,last_name,hire_data,dept_no,leaves_no) values(3498 , 
+"Jameson", "Hawthorne","17-oct-2001",1,1);
+DEPARTMENT:
+Insert into department(dept_no,dept_name) values(1,"Administration");
+Insert into department(dept_no,dept_name) values(2,"IT");
+Insert into department(dept_no,dept_name) values(3 , "Sales");
+Insert into department(dept_no,dept_name) values(4 , "HR");
+Insert into department(dept_no,dept_name) values(5, "Marketing");
+LEAVES:
+Insert into Leave(dept_no,sick_leaves,casual_leaves,paid_leaves) values(1,1,2,1);
+Insert into Leave(dept_no,sick_leaves,casual_leaves,paid_leaves) values(2,2,1,2);
+Insert into Leave(dept_no,sick_leaves,casual_leaves,paid_leaves) values(3,2,2,2);
+Insert into Leave(dept_no,sick_leaves,casual_leaves,paid_leaves) values(4,1,1,2);
+Insert into Leave(dept_no,sick_leaves,casual_leaves,paid_leaves) values(5,1,1,1);
+SALARY:
+Insert into salary(employee_id,salary,tax,bonus) values(1204 , 27500,230,2000);
+Insert into salary(employee_id,salary,tax,bonus) values(2305, 35000,258, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(3406 , 25000,210, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(1014 , 22000,198, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(1014 , 22000,198, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(2034 , 27624,225, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(7204 , 47000,270, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(4201 , 73163,500, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(5304 , 54629,368, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(4100 , 24858,206, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(1004 , 31000,240, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(6789, 30000 ,237, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(9807 , 70000,490, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(8024 , 24082,207, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(6657, 45000,265, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(2220, 43442,260, 2000 );
+18
+Insert into salary(employee_id,salary,tax,bonus) values(5047 , 125000,1000, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(4066 , 27964,229, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(5678 , 30000,278, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(2004 , 108824,990, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(1897 , 60000,490, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(7866 , 30000,278, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(8976 , 53598,389, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(1001 , 71011,510, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(2005 , 90000,970, 2000);
+Insert into salary(employee_id,salary,tax,bonus) values(3498 , 25000,230, 2000);
+ACCDETAILS:
+Insert into accdetails(employee_id,acc_number,bank_name) values(1204, 1009900, "Allahabad Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(2305, 2009901,"Andhra Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(3406, 3009902,"Axis Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(1014 ,4009903,"Bank of Bahrain 
+and Kuwait");
+Insert into accdetails(employee_id,acc_number,bank_name) values(2034 ,5009904,"Bank of Baroda -
+Corporate Banking");
+Insert into accdetails(employee_id,acc_number,bank_name) values(7204 ,6009905,"Bank of India");
+Insert into accdetails(employee_id,acc_number,bank_name) values(4201 ,7009906,"Canara Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(5304 ,8009907,"Central Bank of 
+India");
+Insert into accdetails(employee_id,acc_number,bank_name) values(4100 ,9009908,"Allahabad Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(1004 ,1789909,"Andhra Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(6789 ,2809801 ,"Axis Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(9807 ,9109802,"Axis Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(8024 ,5009803,"Bank of Bahrain 
+and Kuwait");
+Insert into accdetails(employee_id,acc_number,bank_name) values(6657, 6709214,"State Bank of 
+India");
+Insert into accdetails(employee_id,acc_number,bank_name) values(2220, 3202315,"State Bank of 
+India");
+Insert into accdetails(employee_id,acc_number,bank_name) values(5047 , 0997986,"Syndicate Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(4066 , 0495907,"Federal Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(5678 , 0116574,"Federal Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(2004 , 0229856,"Bank of Baroda -
+Corporate Banking");
+Insert into accdetails(employee_id,acc_number,bank_name) values(1897 , 0779812,"Syndicate Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(7866 , 0559451,"Bank of India");
+Insert into accdetails(employee_id,acc_number,bank_name) values(8976 , 0889712,"Canara Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(1001 , 0409853,"Development 
+Credit Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(2005 , 0179314,"Syndicate Bank");
+Insert into accdetails(employee_id,acc_number,bank_name) values(3498 , 0009543,"Syndicate Bank")
