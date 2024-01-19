@@ -1,0 +1,44 @@
+1.List the employee name of employee with high salary as highest_salary from department 1?
+SQL> select e.first_name,max(salary) from Employees e join Salary s on 
+e.employee_id=s.employee_id group by dept_no having dept_no=1
+
+2.Select Employee details whose salary is above 70,000?
+SQL> select * from Employees e join Salary s on e.employee_id=s.employee_id where 
+salary>70000;
+
+3.List Employees whose No.of Leaves is >5 and salary is above 50,000?
+SQL> select first_name from Employees e join Salary s on e.employee_id=s.employee_id where 
+salary>50000 and leaves_no>5
+
+4.List the employee firstname,lastname,leaves_no,salary who belongs to HR department and salary is 
+above 40,000?
+SQL> select first_name,last_name,leaves_no,salary from Employees e join Salary s on 
+e.employee_id=s.employee_id join Department d on e.dept_no=d.dept_no where salary>40000 and 
+dept_name='HR'
+
+5.Print department number and average salary for the department whose average salary is >50,000?
+SQL> select dept_no,avg(salary) as average_salary from Employees e join Salary s on 
+e.employee_id=s.employee_id group by dept_no having avg(salary)>50000
+
+6.List Maximum salary as highest_salary from salary table?
+SQL> select max(salary) as highest_salary from Salary
+
+7.Print Employee firstname,lastname,ban kname those who has bank account in Syndicate Bank?
+SQL>select first_name,last_name,bank_name from Employees e join Accdetails a on 
+e.employee_id=a.employee_id where bank_name='Syndicate Bank'
+
+8.List the department name,firstname,lastname of the Employee Whose lastname starts with A?
+SQL>select dept_name,first_name,last_name from Employees e join Department d on 
+e.dept_no=d.dept_no where last_name like 'A%'
+
+9.List employee_id,first_name,last_name,dept_name for all Employees?
+SQL>select employee_id,first_name,last_name, dept_name from Employees e join department d on 
+e.dept_no=d.dept_no
+
+10.Print Employee names and leaves status as 
+ i.”leaves exceeded”,if no. of leaves are greater than total available leaves.
+ ii.”no leaves left” ,if no. of leaves is equals to total available leaves.
+ iii.”leaves available” ,if no.of leaves is less than available leaves.
+SQL> select first_name,last_name,case when leaves_no>(sick_leaves+casual_leaves+paid_leaves) then 
+'Leaves exceeded' when leaves_no=(sick_leaves+casual_leaves+paid_leaves) then 'No Leaves left' else 
+'Leaves available' end as Leaves_status from Employees e join Leave l on e.dept_no=l.dept_no
